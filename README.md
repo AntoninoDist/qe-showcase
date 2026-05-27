@@ -4,6 +4,8 @@ Welcome!
 
 This repository is a take-home exercise for Quality Engineering (QE) candidates. The goal is **not** to grade you on correctness or to create a pass/fail test. Instead, we want to see how you approach real-world quality engineering problems, communicate your thought process, and use your favorite tools.
 
+Use the tools and workflow you would normally use on the job—including documentation, IDE assistants, or anything else you rely on in real work.
+
 **Choose your own adventure:**  
 Pick **one** of the following paths (see `/tasks/` for details):
 
@@ -14,21 +16,23 @@ Pick **one** of the following paths (see `/tasks/` for details):
 
 - How you structure your code and tests
 - Realistic assertions and thoughtful test cases
-- Clear communication (in code and comments)
-- Basic Git usage (branch, commit)
+- Clear communication (in code, comments, and your PR)
+- Basic Git usage (branch, commit, PR)
+- Risk-based thinking — what you chose to test and what you intentionally skipped
 
 **What we _don't_ care about:**
 
 - Perfection or "the right answer"
-- Full coverage or edge cases
-- Build pipelines or automation
+- Full coverage or exhaustive edge cases
+- CI/CD pipelines (not required — if you add one because that's how you normally work, we'll treat it as a bonus signal, not a bar)
 
 **How to proceed:**
 
 1. Fork this repo.
 2. Pick a task from `/tasks/` and follow the instructions.
-3. Don't spend more than an hour on this.
-4. Complete your solution and be ready to discuss your approach.
+3. Don't spend more than 30 minutes on this.
+4. Open a PR with your solution. Use the PR template to tell us about your approach.
+5. Be ready to walk through your submission and explain your choices — we may ask follow-up questions live or in PR comments.
 
 We'll leave comments and may ask questions — we're interested in your reasoning and how you respond, not just what you build.
 

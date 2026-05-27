@@ -18,9 +18,11 @@ Write a Cypress test that covers a basic purchase flow on [saucedemo.com](https:
 - Use realistic assertions (e.g., check for confirmation messages, cart contents)
 - Organize your test(s) as you see fit
 - Add comments to explain your thinking
+- Prefer stable selectors where possible; note any brittleness you accepted for time
+- If time allows, add one failure or edge scenario you think matters most
 - You don’t need to cover every edge case
 
-**Estimated time:** Less than 1 hour
+**Estimated time:** 30 minutes or less
 
 **Resources:**
 

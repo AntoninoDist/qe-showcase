@@ -23,8 +23,10 @@ Test the `/posts` endpoint on [jsonplaceholder.typicode.com](https://jsonplaceho
 - Include meaningful assertions (status codes, response structure, etc.)
 - Use variables/dynamic data where appropriate
 - Document your approach in comments or README
+- Prefer stable, maintainable request structure; note any shortcuts you accepted for time
+- If time allows, add one failure or edge scenario you think matters most (e.g., invalid payload, missing field)
 
-**Estimated time:** Less than 1 hour
+**Estimated time:** 30 minutes or less
 
 **Resources:**
 

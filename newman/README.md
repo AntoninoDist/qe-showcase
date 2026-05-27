@@ -24,7 +24,7 @@ Test the `/posts` endpoint on [jsonplaceholder.typicode.com](https://jsonplaceho
 - Use variables/dynamic data where appropriate
 - Document your approach in comments or README
 
-**Estimated time:** Less than 1 hour
+**Estimated time:** 30 minutes or less
 
 **Resources:**
 
