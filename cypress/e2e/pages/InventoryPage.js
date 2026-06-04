@@ -46,6 +46,18 @@ class InventoryPage {
     return this;
   }
 
+  /**
+   * After sortByPriceHighToLow(), the first catalog row is the highest-priced item.
+   * Uses the first [data-test^="add-to-cart"] within that row.
+   */
+  addTopListedProductToCart() {
+    cy.get(this.selectors.inventoryItem)
+      .first()
+      .find('[data-test^="add-to-cart"]')
+      .click();
+    return this;
+  }
+
   goToCart() {
     cy.get(this.selectors.cartLink).click();
     return this;

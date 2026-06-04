@@ -25,10 +25,15 @@ class ConfirmationPage {
     return this;
   }
 
-  assertOrderComplete() {
+  assertSuccessHeader() {
     cy.get(this.selectors.completeHeader)
       .should("be.visible")
-      .and("contain.text", this.expectedMessages.header);
+      .and("have.text", this.expectedMessages.header);
+    return this;
+  }
+
+  assertOrderComplete() {
+    this.assertSuccessHeader();
     cy.get(this.selectors.completeText)
       .should("be.visible")
       .and("contain.text", this.expectedMessages.body);

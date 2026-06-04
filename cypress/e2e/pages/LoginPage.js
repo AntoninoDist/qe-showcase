@@ -10,12 +10,22 @@ class LoginPage {
     username: '[data-test="username"]',
     password: '[data-test="password"]',
     loginButton: '[data-test="login-button"]',
+    error: '[data-test="error"]',
   };
 
   defaultUser = {
     username: "standard_user",
     password: "secret_sauce",
   };
+
+  lockedOutUser = {
+    username: "locked_out_user",
+    password: "secret_sauce",
+  };
+
+  /** Exact copy from [data-test="error"] when locked_out_user signs in */
+  lockedOutErrorMessage =
+    "Epic sadface: Sorry, this user has been locked out.";
 
   visit() {
     cy.visit("/");
@@ -49,6 +59,24 @@ class LoginPage {
     cy.get(this.selectors.password).should("be.visible");
     cy.get(this.selectors.loginButton).should("be.visible");
     return this;
+  }
+
+  /** Stays on login — use for negative paths that must not reach inventory */
+  assertRemainsOnLogin() {
+    cy.url().should("not.include", "inventory");
+    this.assertOnPage();
+    return this;
+  }
+
+  assertErrorMessage(expectedMessage) {
+    cy.get(this.selectors.error)
+      .should("be.visible")
+      .and("have.text", expectedMessage);
+    return this;
+  }
+
+  assertLockedOutError() {
+    return this.assertErrorMessage(this.lockedOutErrorMessage);
   }
 }
 
